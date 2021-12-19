@@ -6,6 +6,18 @@ import DataMan from './Components/DataMan';
 
 function App() {
 
+  let newarr=[];
+  const DeleteItem=function(item)
+  {
+    newarr=data.filter((data)=>{
+      if(data.data.id!==item)
+      {
+        return data;
+      }
+    })
+    setdata([...newarr]);
+  }
+
   const [data,setdata]=useState([
     {
       img:'https://m.media-amazon.com/images/I/71J93R3+TkL._SX679_.jpg',
@@ -57,7 +69,7 @@ function App() {
     <div className='App'>
       <div className='Cart'>
         <Header content={'ShoppingCart'} content1={'Remove All'}></Header>
-        <Items setdata={setdata} datalist={data}></Items>
+        <Items DeleteItem={DeleteItem} setdata={setdata} datalist={data}></Items>
         <hr className='linebreak' />
         <DataMan data={data}></DataMan>
       </div>

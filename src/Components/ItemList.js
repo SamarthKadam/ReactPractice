@@ -1,9 +1,9 @@
 import "./Itemlist.css";
 import { FcApproval } from "react-icons/fc";
 import { FcCheckmark } from "react-icons/fc";
-import { AiFillPlusCircle, AiOutlinePlusCircle } from "react-icons/ai";
+import { AiFillPlusCircle} from "react-icons/ai";
 import { AiFillMinusCircle } from "react-icons/ai";
-function Itemlist({ data, setdata }) {
+function Itemlist({ data, setdata ,DeleteItem}) {
   const increment = function (item) {
       data.data.count++;
     //   setdata(data);
@@ -60,7 +60,7 @@ function Itemlist({ data, setdata }) {
       <div className="ProductPriceContainer adH">
           <div className="ProductPrice Pad">{`Rs ${data.data.price*(data.data.count)}`}</div>
           <div className="Suggestion Pad">Save for later</div>
-          <div className="RemovingSug Pad" >Remove</div>
+          <div onClick={()=>{DeleteItem(data.data.id)}} className="RemovingSug Pad" >Remove</div>
       </div>
     </div>
   );
