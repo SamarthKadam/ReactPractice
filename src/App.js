@@ -68,6 +68,7 @@ function App() {
   return (
     <div className='App'>
       <div className='Cart'>
+        {/* <div className='dialog'>Hello world</div> */}
         <Header content={'ShoppingCart'} content1={'Remove All'}></Header>
         <Items DeleteItem={DeleteItem} setdata={setdata} datalist={data}></Items>
         <hr className='linebreak' />

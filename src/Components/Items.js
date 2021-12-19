@@ -12,8 +12,7 @@ function Items(props)
          props.datalist.map((data,index)=>{
              return <Itemlist DeleteItem={props.DeleteItem} setdata={props.setdata} data={data} key={index+1}></Itemlist>
          })
-            })
-        </div>
-    )
+            }
+        </div>)
 }
 export default Items;
