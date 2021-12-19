@@ -1,0 +1,87 @@
+.SingleItem{
+    display: flex;
+    height: 200px;
+    margin: 1em 0em;
+    justify-content: center;
+}
+.ItemsContainer{
+    margin-top: 1em;
+}
+.reduceimg{
+    height: 200px;
+}
+.ContentofProduct{
+    display: flex;
+    flex-flow: column;
+}
+.ProductQuantity{
+    text-align: start;
+}
+.ProductConunt{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+.Operation{
+    display: flex;
+}
+.CountofNum{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 0px 1em;
+    user-select: none;
+}
+.Pad{
+    padding: .4em 0em;
+}
+.HeadingProduct{
+    text-align: start;
+    font-size: 1.6em;
+    color: rgb(37, 37, 37);
+    letter-spacing: -1px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+}
+.ProductQuantity{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: grey;
+    font-size: 1.2em;
+}
+.adjust{
+    font-size: 3em;
+}
+.adH{
+    /* width: 250px;
+    height: 200px; */
+    width: 100%;
+    height: 100%;
+}
+.buttonicon{
+    font-size: 2em;
+    color: #b6b6b6;
+    cursor: pointer;
+}
+.Suggestion{
+    /* text-align: start; */
+    color: #84bef3;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.ProductPrice{
+    font-size: 25px;
+    font-weight: 700;
+}
+.RemovingSug{
+    color: #EC999B;
+    cursor: pointer;
+    font-weight: 500;
+    text-decoration:underline;
+}
+.ProductPriceContainer{
+    display: flex;
+    flex-flow: column;
+}
