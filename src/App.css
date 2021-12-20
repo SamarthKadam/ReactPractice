@@ -36,6 +36,9 @@
   body{
     font-size: 9px;
   }
+  .Cart{
+    width: 80%;
+  }
 }
 @media(max-width:588px)
 {
