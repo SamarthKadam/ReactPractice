@@ -25,6 +25,30 @@
   box-shadow: 0px 0px 6px 2px #bdcbdd;
   background-color: white;
 }
+@media (max-width:966px)
+{
+  body{
+    font-size: 12px;
+  }
+}
+@media(max-width:745px)
+{
+  body{
+    font-size: 9px;
+  }
+}
+@media(max-width:588px)
+{
+  body{
+    font-size: 7px;
+  }
+}
+@media(max-width:455px)
+{
+  body{
+    font-size: 6px;
+  }
+}
 
 .dialog{
   position: absolute;
