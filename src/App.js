@@ -6,17 +6,19 @@ import DataMan from './Components/DataMan';
 
 function App() {
 
+
   let newarr=[];
   const DeleteItem=function(item)
   {
     newarr=data.filter((data)=>{
-      if(data.data.id!==item)
-      {
-        return data;
-      }
+      // if(data.data.id!==item)
+      // {
+      //   return data;
+      // }
+      return data.data.id!==item
     })
     setdata([...newarr]);
-  }
+}
 
   const [data,setdata]=useState([
     {
